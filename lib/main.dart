@@ -8,6 +8,7 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
+    // GOT THIS AFTER CLI SETUP
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await FirebaseApi().initNotification();
